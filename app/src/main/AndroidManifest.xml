@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tugasp10">
+
+    <!-- Izin yang diperlukan, jika ada -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="Tugas P10"
+        android:theme="@style/Theme.TugasP10.WithActionBar">
+
+        <!-- MainActivity dengan TabLayout dan ViewPager2 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Login & Register"
+            android:theme="@style/Theme.TugasP10.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- HomeActivity untuk halaman utama setelah login -->
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"
+            android:theme="@style/Theme.TugasP10.NoActionBar">
+            <!-- Menambahkan konfigurasi jika diperlukan (misal, orientasi atau animasi) -->
+        </activity>
+
+        <!-- FragmentLoginActivity untuk halaman login, sudah digabung di MainActivity -->
+        <!-- FragmentRegisterActivity untuk halaman registrasi, sudah digabung di MainActivity -->
+
+        <!-- Menambahkan fragment di dalam aplikasi -->
+        <activity
+            android:name=".LoginFragment"
+            android:label="Login"
+            android:theme="@style/Theme.TugasP10.NoActionBar" />
+
+        <activity
+            android:name=".RegisterFragment"
+            android:label="Register"
+            android:theme="@style/Theme.TugasP10.NoActionBar" />
+
+    </application>
+</manifest>

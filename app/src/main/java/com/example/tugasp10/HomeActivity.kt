@@ -1,8 +1,9 @@
+package com.example.tugasp10
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tugasp10.R
+
 
 class HomeActivity : AppCompatActivity() {
 
@@ -12,7 +13,7 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_homepage)
+        setContentView(R.layout.activity_home)
 
         // Inisialisasi Views
         welcomeTextView = findViewById(R.id.welcome)

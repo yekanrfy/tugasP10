@@ -1,5 +1,6 @@
 package com.example.tugasp10
 
+import MyViewerAdapter
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val tabLayout: TabLayout = findViewById(R.id.tab_layout)
 
         // Adapter untuk ViewPager2, gunakan FragmentStateAdapter untuk fragment
-        val adapter = ViewPager2(this)
+        val adapter = MyViewerAdapter(this)
         viewPager.adapter = adapter
 
         // Menghubungkan TabLayout dengan ViewPager2 menggunakan TabLayoutMediator

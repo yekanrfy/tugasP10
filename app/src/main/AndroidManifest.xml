@@ -13,7 +13,8 @@
         <!-- MainActivity dengan TabLayout dan ViewPager2 -->
         <activity
             android:name=".MainActivity"
-            android:label="Login & Register"
+            android:label="LoginRegister"
+            android:exported="true"
             android:theme="@style/Theme.TugasP10.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

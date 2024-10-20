@@ -1,0 +1,9 @@
+<resources>
+<style name="Theme.TugasP10.WithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here -->
+</style>
+<style name="Theme.TugasP10.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here -->
+</style>
+
+</resources>
